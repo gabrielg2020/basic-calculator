@@ -5,3 +5,72 @@
     margin: 0;
     font-family: 'Roboto Slab', serif;
 }
+
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(170, 170, 170);
+    padding: 1rem;
+    margin: 5rem auto;
+    gap: 0.4rem;
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 7rem;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.numbers-operators {
+    display: grid;
+    grid-template-columns: auto auto auto auto;   
+}
+
+.clear {
+    background-color: rgb(255, 135, 135);
+}
+
+.delete {
+    background-color: rgb(134, 134, 255);
+}
+
+p {
+    text-align: end;
+    padding: 0.3rem 2rem;
+    font-size: 2rem;
+}
+
+button:hover {
+    filter: brightness(0.8);
+}
+
+button:active {
+    filter: brightness(0.5);
+}
+
+button {
+    margin: 0.1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    transition: filter 0.1s;
+    cursor: pointer;
+}
